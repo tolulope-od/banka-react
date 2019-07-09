@@ -20,6 +20,7 @@
     "build": "webpack --mode production",
     "test": "jest",
     "test:coverage": "jest --coverage",
+    "coveralls": "npm run test:coverage && cat ./coverage/lcov.info | coveralls",
     "test:watch": "jest --watch",
     "lint": "eslint src -c .eslintrc.js --ext js,jsx"
   },
@@ -44,6 +45,7 @@
     "@babel/preset-env": "^7.5.0",
     "@babel/preset-react": "^7.0.0",
     "babel-loader": "^8.0.6",
+    "coveralls": "^3.0.4",
     "css-loader": "^3.0.0",
     "enzyme": "^3.10.0",
     "enzyme-adapter-react-16": "^1.14.0",
