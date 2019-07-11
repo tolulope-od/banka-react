@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<WelcomeMessage /> Renders the WelcomeMessage component 1`] = `
+<div
+  className="col s5"
+>
+  <h1
+    className="tag-heading"
+  >
+    Banking, done right
+  </h1>
+  <p
+    className="bodyTxt intro"
+  >
+    Banka is the future of bank accounts management. We employ cutting edge technology
+to improve all facets of your financial life
+  </p>
+  <Link
+    className="auth-btn-side"
+    to="/signup"
+  >
+    Get Started
+  </Link>
+</div>
+`;

@@ -9,7 +9,7 @@ module.exports = {
   env: {
     es6: true,
     browser: true,
-    mocha: true
+    jest: true
   },
   parserOptions: {
     ecmaVersion: 9,
