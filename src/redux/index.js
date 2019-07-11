@@ -14,7 +14,7 @@ if (isDev && typeof window !== 'undefined' && window.devToolsExtension) {
   enhancers.push(window.devToolsExtension());
 }
 
-export default store = createStore(
+const store = createStore(
   rootReducer,
   initialState,
   compose(
@@ -22,3 +22,5 @@ export default store = createStore(
     ...enhancers
   )
 );
+
+export default store;

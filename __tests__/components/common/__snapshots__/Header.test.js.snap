@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Header /> Renders the Header component 1`] = `
+<div
+  id="navbar"
+>
+  <Link
+    id="logo"
+    to="/"
+  >
+    <i
+      className="fas fa-coins"
+    />
+    Banka
+  </Link>
+  <div
+    id="navbar-right"
+  >
+    <Link
+      className="login-btn"
+      to="/login"
+    >
+      Login
+    </Link>
+  </div>
+</div>
+`;

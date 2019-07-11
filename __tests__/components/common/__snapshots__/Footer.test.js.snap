@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Footer /> Renders the footer component 1`] = `
+<footer
+  className="footer"
+>
+  <p
+    className="footerTxt center-text"
+  >
+    Banka Inc © 2019
+  </p>
+</footer>
+`;
