@@ -305,6 +305,12 @@ input[type='submit']:active {
   transform: translateY(4px);
 }
 
+input[type='submit']:disabled {
+  background-color: #666667;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
 input:focus {
   border: 1px solid blue;
 }

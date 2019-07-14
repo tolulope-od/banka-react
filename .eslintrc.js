@@ -4,7 +4,8 @@ module.exports = {
   rules: {
     'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
     'prettier/prettier': ['error'],
-    'class-methods-use-this': [0]
+    'class-methods-use-this': [0],
+    'no-unused-vars': ['error', { varsIgnorePattern: 'history' }]
   },
   env: {
     es6: true,
@@ -12,8 +13,8 @@ module.exports = {
     jest: true
   },
   parserOptions: {
-    ecmaVersion: 9,
+    ecmaVersion: 2018,
     sourceType: 'module',
-    ecmaFeatures: { jsx: true }
+    ecmaFeatures: { jsx: true, arrowFunctions: true }
   }
 };

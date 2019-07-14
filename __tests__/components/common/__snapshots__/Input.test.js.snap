@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Input /> Renders the Input component 1`] = `
+<input
+  id="user-email"
+  name="email"
+  onChange={[MockFunction]}
+  placeholder="Email"
+  required={true}
+  type="email"
+  value="sample@email.com"
+/>
+`;

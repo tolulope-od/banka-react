@@ -1,6 +1,6 @@
 import { GET_ERRORS, CLEAR_ERRORS } from '../actions/types';
 
-const initialState = {};
+export const initialState = {};
 
 export default (state = initialState, action) => {
   switch (action.type) {

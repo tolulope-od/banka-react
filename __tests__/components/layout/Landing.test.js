@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { shallow } from 'enzyme';
-import toJson from 'enzyme-to-json';
 import Landing from '../../../src/components/layout/Landing';
 
 const shallowSetup = () => {
@@ -23,7 +22,7 @@ const shallowSetup = () => {
 
 describe('<Landing />', () => {
   it('Renders the Landing Page', () => {
-    const { enzymeWrapper, props } = shallowSetup();
+    const { enzymeWrapper } = shallowSetup();
     expect(enzymeWrapper.find('img').length).toBe(4);
     expect(enzymeWrapper.find('WelcomeMessage').length).toBe(1);
   });

@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Login /> Should change the displayed component if the user information is loading 1`] = `undefined`;
