@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Error action creators creates a CLEAR_ERRORS action to clear the errors 1`] = `
+Array [
+  Object {
+    "payload": Object {
+      "error": "Account not found!",
+      "status": 404,
+    },
+    "type": "GETTING ERRORS",
+  },
+  Object {
+    "type": "CLEARING ERRORS",
+  },
+]
+`;
+
+exports[`Error action creators creates a GET_ERRORS action whenever an error occurs 1`] = `
+Array [
+  Object {
+    "payload": Object {
+      "error": "Account not found!",
+      "status": 404,
+    },
+    "type": "GETTING ERRORS",
+  },
+]
+`;
