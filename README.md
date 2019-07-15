@@ -7,8 +7,8 @@ Banka is a light-weight core banking application that supports a single bank and
 # Table of Contents
 
 1. <a href="#pivotal-tracker-board">Pivotal Tracker</a>
-2. <a href="#hosted-app">Hoster App</a>
-3. <a href="#tech-stack-user">
+2. <a href="#hosted-app">Hosted App</a>
+3. <a href="#tech-stack-used">Tech Stack Used</a>
 4. <a href="#server-repo">Server Repository</a>
 5. <a href="getting-started">Getting Started</a>
 
