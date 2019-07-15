@@ -7,7 +7,8 @@ import './App.css';
 import Landing from './layout/Landing';
 import Header from './common/Header';
 import Footer from './common/Footer';
-import Login from './layout/Login';
+import LoginComponent from './layout/Login';
+import RegisterComponent from './layout/Register';
 
 class App extends Component {
   render() {
@@ -17,7 +18,8 @@ class App extends Component {
           <Header />
           <div className="main">
             <Route exact path="/" component={Landing} />
-            <Route exact path="/login" component={Login} />
+            <Route exact path="/login" component={LoginComponent} />
+            <Route exact path="/signup" component={RegisterComponent} />
           </div>
           <Footer />
         </Router>

@@ -52,9 +52,9 @@ class Landing extends Component {
           </div>
         </div>
         <div className="item-content-container action-area">
-          <a href="signup.html" className="auth-btn">
+          <Link to="/signup" className="auth-btn">
             Get Started
-          </a>
+          </Link>
           <Link to="/login" className="auth-btn">
             Login
           </Link>
