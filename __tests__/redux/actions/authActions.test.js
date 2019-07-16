@@ -4,7 +4,7 @@ import thunk from 'redux-thunk';
 import moxios from 'moxios';
 
 import API_URL from '../../../src/utils/API';
-import { login, signUp } from '../../../src/redux/actions/authActions';
+import { login, signUp, logout } from '../../../src/redux/actions/authActions';
 import { SET_USER, USER_LOADING, CLEAR_ERRORS, GET_ERRORS } from '../../../src/redux/actions/types';
 
 const mockStore = configureMockStore([thunk]);
@@ -163,5 +163,13 @@ describe('Auth Actions Test', () => {
     await store.dispatch(signUp(mockSignUp, props.history));
     expect(store.getActions()).toEqual(actions);
     done();
+  });
+
+  it('Should log out a user', () => {
+    const actions = [{ type: SET_USER, payload: {} }];
+
+    const store = mockStore();
+    store.dispatch(logout());
+    expect(store.getActions()).toEqual(actions);
   });
 });
