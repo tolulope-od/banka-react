@@ -1,3 +1,53 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<SideNav Renders the Header component 1`] = `""`;
+exports[`<SideNav Renders the Header component 1`] = `
+<div
+  className="side-nav"
+>
+  <div
+    className="side-nav-content"
+  >
+    <h5
+      className="side-nav-greet"
+    >
+      Welcome,
+    </h5>
+    <h4
+      className="side-nav-name"
+      id="side-nav-name"
+    >
+      Obiwan
+    </h4>
+    <Link
+      className="side-link"
+      id={null}
+      to="/dashboard"
+    >
+      <i
+        className="fas fa-columns"
+      />
+       Dashboard
+    </Link>
+    <Link
+      className="side-link"
+      id={null}
+      to="/viewaccounts"
+    >
+      <i
+        className="fas fa-file-invoice-dollar"
+      />
+       Accounts
+    </Link>
+    <Link
+      className="side-link"
+      id={null}
+      to="/profile"
+    >
+      <i
+        className="fas fa-user-circle"
+      />
+       Profile
+    </Link>
+  </div>
+</div>
+`;

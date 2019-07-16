@@ -1,26 +1,93 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Header /> Renders the Header component 1`] = `
-<div
-  id="navbar"
->
-  <Link
-    id="logo"
-    to="/"
-  >
-    <i
-      className="fas fa-coins"
-    />
-    Banka
-  </Link>
+exports[`<Header /> Renders the Authenticated Header component 1`] = `
+<div>
   <div
-    id="navbar-right"
+    className="menu-nav"
+    id="navbar"
   >
     <Link
-      className="login-btn"
-      to="/login"
+      id="logo"
+      to="/dashboard"
     >
-      Login
+      <i
+        className="fas fa-coins"
+      />
+      Banka
+    </Link>
+    <div
+      id="navbar-right"
+    >
+      <div
+        className="profile-action"
+        id="drop-down"
+        onClick={[Function]}
+      >
+        <img
+          alt="Profile Picture"
+          className="avatar-img"
+          src="test-file-stub"
+        />
+        <i
+          className="fas fa-chevron-down"
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    className="profile-dropdown"
+    id="dropdown-contents"
+  >
+    <Link
+      className="dropdown-item profile"
+      id="inactive"
+      to="/dashboard"
+    >
+      <i
+        className="fas fa-columns icon"
+      />
+       Dashboard
+    </Link>
+    <Link
+      className="dropdown-item profile"
+      id="inactive"
+      to="/viewaccounts"
+    >
+      <i
+        className="fas fa-file-invoice-dollar icon"
+      />
+       Accounts
+    </Link>
+    <Link
+      className="dropdown-item profile"
+      id="active"
+      to="/users"
+    >
+      <i
+        className="fas fa-users icon"
+      />
+       Users
+    </Link>
+    <Link
+      className="dropdown-item profile"
+      id="inactive"
+      to="/profile"
+    >
+      <i
+        className="fas fa-user-circle icon"
+      />
+       Profile
+    </Link>
+    <Link
+      className="dropdown-item"
+      id="logout-btn"
+      onClick={[Function]}
+      to="/"
+    >
+      <i
+        className="fas fa-sign-out-alt icon"
+      />
+      Logout
     </Link>
   </div>
 </div>
