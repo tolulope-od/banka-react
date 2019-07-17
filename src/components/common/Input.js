@@ -24,7 +24,7 @@ Input.propTypes = {
   value: PropTypes.string.isRequired,
   onChange: PropTypes.func,
   required: PropTypes.bool,
-  disconnect: PropTypes.bool
+  disabled: PropTypes.bool
 };
 
 export default Input;

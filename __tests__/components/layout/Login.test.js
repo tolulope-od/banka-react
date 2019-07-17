@@ -13,7 +13,8 @@ const shallowSetup = () => {
     auth: {},
     onChange: jest.fn(),
     onSubmit: jest.fn(),
-    loading: false
+    loading: false,
+    history: { push: jest.fn() }
   };
 
   const enzymeWrapper = shallow(<Login {...props} />);
@@ -55,6 +56,12 @@ describe('<Login />', () => {
     const login = jest.spyOn(component, 'onSubmit');
     component.onSubmit({ preventDefault: () => 1 });
     expect(login).toBeCalled();
+  });
+
+  it('Should push an already logged in user to the dashboard', () => {
+    const mount = jest.spyOn(component, 'onSubmit');
+    component.componentDidMount();
+    expect(mount).toBeCalled();
   });
 
   it('Should change the displayed component if the user information is loading', () => {

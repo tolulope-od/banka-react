@@ -358,6 +358,18 @@ input:focus {
   box-shadow: 1px 2px 5px 3px #d2cbcb;
 }
 
+.profile-dropdown-active {
+  display: block;
+  width: auto;
+  height: auto;
+  background-color: white;
+  position: fixed;
+  margin-top: 58px;
+  margin-left: 84%;
+  padding: 15px 20px;
+  box-shadow: 1px 2px 5px 3px #d2cbcb;
+}
+
 button.dropdown-trigger {
   background-color: transparent;
   color: white;

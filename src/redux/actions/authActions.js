@@ -43,3 +43,11 @@ export const signUp = (userData, history) => {
     }
   };
 };
+
+export const logout = () => {
+  return dispatch => {
+    localStorage.removeItem('jwtToken');
+    setAuthToken(false);
+    dispatch(setUser({}));
+  };
+};
