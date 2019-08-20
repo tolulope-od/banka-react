@@ -17,6 +17,7 @@ export const login = userData => {
       setAuthToken(token);
       const decoded = jwtDecode(token);
       dispatch(setUser(decoded));
+      localStorage.setItem('jwtToken', token);
       return dispatch({ type: USER_LOADING, payload: false });
     } catch (err) {
       dispatch({ type: USER_LOADING, payload: false });
@@ -35,8 +36,9 @@ export const signUp = (userData, history) => {
       setAuthToken(token);
       const decoded = jwtDecode(token);
       dispatch(setUser(decoded));
+      localStorage.setItem('jwtToken', token);
       dispatch({ type: USER_LOADING, payload: false });
-      return history.push('/createAccount');
+      return history.push('/createaccount');
     } catch (err) {
       dispatch({ type: USER_LOADING, payload: false });
       return dispatch(getErrors(err.response.data));

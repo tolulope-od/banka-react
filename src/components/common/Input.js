@@ -1,9 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Input = ({ type, name, placeholder, id, value, onChange, required, disabled }) => {
+const Input = ({ type, name, placeholder, id, value, onChange, required, disabled, ...rest }) => {
   return (
     <input
+      {...rest}
       type={type}
       name={name}
       placeholder={placeholder}

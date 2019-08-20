@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Card /> Component Renders the Card component 1`] = `
+<div
+  className="account-stats-card"
+>
+  <Component />
+</div>
+`;
