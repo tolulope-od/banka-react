@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Account Reducer Tests should return the initial state 1`] = `
+Object {
+  "account": Object {},
+  "accountLoading": false,
+  "accounts": Array [],
+}
+`;

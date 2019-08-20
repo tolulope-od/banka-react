@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ErrorMessage /> Component Renders the Error Message component 1`] = `
+<div>
+  <img
+    alt="error-image"
+    src="https://res.cloudinary.com/tolulope-od/image/upload/v1563463864/action-error_ohkpfa.png"
+    width="80"
+  />
+  <h3>
+    Something happend, request not processed
+  </h3>
+  <input
+    className="accnt-create-btn"
+    id="submit-btn"
+    name="addAccount"
+    type="submit"
+    value="OK"
+  />
+</div>
+`;

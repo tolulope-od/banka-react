@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Modal /> Component Renders the Modal component 1`] = `
+<div
+  className="modal"
+  id="myModal"
+  onClick={[Function]}
+>
+  <div
+    className="modal-content"
+    id="account-modal-content"
+    onClick={[Function]}
+  >
+    <span
+      className="close"
+      id="close-button"
+      onClick={[Function]}
+    >
+      ×
+    </span>
+    <div>
+      <Component />
+    </div>
+  </div>
+</div>
+`;
