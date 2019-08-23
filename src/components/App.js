@@ -13,6 +13,7 @@ import LoginComponent from './layout/Login';
 import RegisterComponent from './layout/Register';
 import SideNavCoponent from './common/SideNav';
 import CreateAccountComponent from './layout/CreateAccount';
+import Dashboard from './layout/Dashboard';
 
 checkToken();
 class App extends Component {
@@ -28,6 +29,9 @@ class App extends Component {
             <Route exact path="/signup" component={RegisterComponent} />
             <Switch>
               <PrivateRoute exact path="/createaccount" component={CreateAccountComponent} />
+            </Switch>
+            <Switch>
+              <PrivateRoute exact path="/dashboard" component={Dashboard} />
             </Switch>
           </div>
           <Footer />
