@@ -1,5 +1,9 @@
 import accountReducer, { initialState } from '../../../src/redux/reducers/accountReducer';
-import { ACCOUNT_ACTION_LOADING, ADD_BANK_ACCOUNT } from '../../../src/redux/actions/types';
+import {
+  ACCOUNT_ACTION_LOADING,
+  ADD_BANK_ACCOUNT,
+  FETCH_ALL_BANK_ACCOUNTS
+} from '../../../src/redux/actions/types';
 
 describe('Account Reducer Tests', () => {
   it('should return the initial state', () => {
@@ -31,6 +35,49 @@ describe('Account Reducer Tests', () => {
       account: payload,
       accountLoading: false,
       accounts: [payload]
+    });
+  });
+
+  it('should add multiple accounts to the state', () => {
+    const payload = [
+      {
+        id: 6,
+        accountnumber: '6993007299',
+        owner: 5,
+        ownername: 'Joy Machido',
+        type: 'current',
+        status: 'active',
+        balance: '0.0',
+        owneremail: 'joy.machido@gmail.com',
+        createdon: '2019-07-17T15:11:08.000Z'
+      },
+      {
+        id: 7,
+        accountnumber: '8896255470',
+        owner: 5,
+        ownername: 'Joy Machido',
+        type: 'current',
+        status: 'active',
+        balance: '0.0',
+        owneremail: 'joy.machido@gmail.com',
+        createdon: '2019-07-18T12:06:57.839Z'
+      },
+      {
+        id: 8,
+        accountnumber: '8425966406',
+        owner: 5,
+        ownername: 'Joy Machido',
+        type: 'current',
+        status: 'active',
+        balance: '0.0',
+        owneremail: 'joy.machido@gmail.com',
+        createdon: '2019-07-18T12:10:27.040Z'
+      }
+    ];
+    expect(accountReducer(initialState, { type: FETCH_ALL_BANK_ACCOUNTS, payload })).toEqual({
+      account: {},
+      accountLoading: false,
+      accounts: [...payload]
     });
   });
 });
